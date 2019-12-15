@@ -63,3 +63,16 @@ const things = theNumbers.map((value, index) => {
     }
 })
 console.log(things)
+
+const starter = [2, 9, 42];
+
+const multipliedByNext = starter.map((number, index, array) => {
+    let nextIndex = index + 1
+
+    if (index == array.length - 1 ) {
+        nextIndex = 0
+    }
+
+    return number * array[nextIndex];
+})
+console.log(multipliedByNext)
