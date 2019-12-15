@@ -20,3 +20,37 @@ const abreviated = days.map((day) => {
 })
 
 console.log(abreviated)
+
+const people = [{
+    first_name: 'Cj',
+    last_name: 'R.'
+},{
+    first_name: 'Wick',
+    last_name: 'John.'
+},{
+    first_name: 'Sala',
+    last_name: 'Coner.'
+},{
+    first_name: 'John',
+    last_name: 'Coner.'
+}]
+const fullNames = people.map((person) => {
+    return `${person.first_name} ${person.last_name}`
+})
+console.log(fullNames)
+
+const animals = [{
+    'name': 'cat',
+    'size': 'small',
+}, {
+    'name': 'dog',
+    'size': 'regular',
+}, {
+    'name': 'lion',
+    'size': 'medium',
+}, {
+    'name': 'elephant',
+    'size': 'big',
+}]
+const animalNames = animals.map((animal) => animal.name)
+console.log(animalNames)
