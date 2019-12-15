@@ -54,3 +54,12 @@ const animals = [{
 }]
 const animalNames = animals.map((animal) => animal.name)
 console.log(animalNames)
+
+const theNumbers = [4, 8, 12, 92, 38];
+const things = theNumbers.map((value, index) => {
+    return {
+        value,
+        index
+    }
+})
+console.log(things)
